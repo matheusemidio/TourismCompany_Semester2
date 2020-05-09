@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap CSS Library -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- Bootstrap JavaScript Library -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        /*html, body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}*/
+        
+        .col-6 {
+            width: 50%;
+            height: 300px;
+        }
+        
+        .container {
+            top: 0;
+            bottom: 0;
+            /*			left: 0;
+			right: 0;*/
+            height: 100%;
+            width: 100%;
+        }
+        
+        .navbar {
+            background-color: #ff5500;
+        }
+        
+        .navbar-nav li a {
+            color: black;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        
+        a:hover {
+            background-color: #d14600;
+        }
+        
+        #actual {
+            background-color: #d14600;
+        }
+        
+        .dropdown-menu {
+            background-color: #ff5500;
+        }
+        
+        .dropdown-item:hover {
+            background-color: #d14600;
+        }
+        
+        .row {
+            border: 1px solid #515452;
+        }
+        
+        .form-group {
+            margin: 0;
+            padding-left: 10px;
+        }
+        
+        #birthday {
+            border: 1px solid lightgray;
+        }
+        
+        .form-check-label {
+            margin-left: 20px;
+        }
+        
+        #areaCode {
+            display: inline;
+        }
+        
+        #number {
+            display: inline;
+        }
+        
+        h4 {
+            margin-left: 5px;
+        }
+        
+        button {
+            margin-bottom: 10px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <span class="navbar-brand">Paraiba Travel</span>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="areiaVermelha.html">Areia Vermelha</a>
+                                <a class="dropdown-item" href="picaozinho.html">Picaozinho</a>
+                                <a class="dropdown-item" href="seixas.html">Seixas</a>
+                                <a class="dropdown-item" href="sunset.html">Sunset</a>
+                                <a class="dropdown-item" href="rent.html">Rent</a>
+                            </div>
+                        </li>
+                        <li class="nav-item "><a class="nav-link" href="#" id="actual">Sign up/Login</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <h4>Sign Up</h4>
+            <form class="">
+                <div class="form-group">
+                    <br><label for="firstName">First name:</label><br>
+                    <input class="form-control" type="text" id="firstName" name="firstName" placeholder="Ex: Matheus"><br>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last name:</label><br>
+                    <input class="form-control" type="text" id="lastName" name="lastName" placeholder="Ex: Cadena" size="50"><br>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label><br>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="example@gmail.com"><br>
+                </div>
+                <div class="form-group">
+                    <label for="password">New password:</label>
+                    <input class="form-control" type="password" id="password" name="password" placeholder="Password">
+                    <small id="passwordHelp" class="form-text text-muted">The password must be at least 8 characters long.</small><br>
+                    <label for="password">Confirm password:</label>
+                    <input class="form-control" type="password" id="password" name="password" placeholder="Confirm your password"><br>
+                </div>
+
+                <div class="form-group" id="birthday">
+                    <label for="birthday">Birthday</label><br>
+                    <label for="birthday">Day</label>
+                    <select id="day" class="form-control" style="max-width:20%;">
+                        <option>Day</option>
+                    </select><br>
+                    <label for="month">Month</label>
+                    <select id="month" class="form-control" style="max-width: 40%;">
+                        <option>Month</option>
+                    </select><br>
+                    <label for="year">Year:</label>
+                    <select id="year" class="form-control" style="max-width: 40%;">
+                        <option>Year</option>
+                    </select><br>
+                </div>
+                <div class="form-check">
+                    <label>Gender:</label><br>
+                    <label class="form-check-label" for="male"><input class="form-check-input" type="radio" id="male" name="gender" value="male">Male</label>
+                    <label class="form-check-label" for="female"><input class="form-check-inputl" type="radio" id="female" name="gender" value="female">Female</label>
+                    <label class="form-check-label" for="other"><input class="form-check-input" type="radio" id="other" name="gender" value="other">Other</label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="phone">Phone number:</label>
+                    <div id="phone">
+                        <input id="areaCode" class="form-control" type="text" style="max-width: 15%" placeholder="xxx">
+                        <input id="number" class="form-control" type="text" style="max-width: 50%" placeholder="xxx-xxxx">
+                    </div>
+                </div>
+                <br>
+                <button type="button" class="btn btn-success">Submit</button><br>
+            </form>
+        </div>
+        <div class="row">
+            <h4>Login</h4><br>
+            <form class="">
+                <div class="form-group">
+                    <br><label for="email">Email:</label><br>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="example@gmail.com"><br>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input class="form-control" type="password" id="password" name="password" placeholder="password"><br>
+                </div>
+                <button type="button" class="btn btn-success">Submit</button><br>
+            </form>
+        </div>
+    </div>
+    <script>
+        for (let i = 1; i <= 31; i++) {
+            $("#day").append("<option value = " + i + ">" + i + "</option>");
+
+        }
+
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        for (let i = 0; i < months.length; i++) {
+            $("#month").append("<option value = " + months[i] + ">" + months[i] + "</option>");
+        }
+        for (let i = 2020; i >= 1920; i--) {
+            $("#year").append("<option value = " + i + ">" + i + "</option>");
+        }
+    </script>
+
+
+</body>
+
+</html>
