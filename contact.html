@@ -9,6 +9,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <!-- Bootstrap JavaScript Library -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style type="text/css">
         /*html, body {
 			margin: 0;
@@ -55,6 +57,28 @@
         .dropdown-item:hover {
             background-color: #d14600;
         }
+        
+        #map {
+            width: 400px;
+            height: 400px;
+        }
+        
+        .container {
+            margin-top: 10px;
+        }
+        
+        i {
+            margin-left: 50px;
+        }
+        
+        #instagram {
+            font-size: 36px;
+        }
+        
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
     </style>
 
 
@@ -85,8 +109,32 @@
             </div>
         </nav>
     </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
 
+                <ul class="list-unstyled mb-0">
+                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                        <p>+ 01 234 567 89</p>
+                    </li>
+                    <br>
+                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                        <p>contact@mdbootstrap.com</p>
+                    </li>
+                    <br>
+                    <li><i id="instagram" class="fa fa-instagram"></i>
+                        <p>@tourparaibatrabel</p>
+                        <p>@passeioemjoaopessoa</p>
+                    </li>
+                </ul>
 
+            </div>
+            <div class="col-md-6 embed-responsive embed-responsive-16by9" id="map">
+                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.0419534460284!2d-34.83635448522609!3d-7.121136494857691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd315742d08b%3A0xa92d5e1f4b130994!2sR.%20Ov%C3%ADdio%20Mendon%C3%A7a%2C%2040%20-%20Miramar%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058033-455%2C%20Brasil!5e0!3m2!1spt-BR!2sca!4v1589007365818!5m2!1spt-BR!2sca"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
 
 
 
