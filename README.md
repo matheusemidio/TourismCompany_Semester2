@@ -3,7 +3,7 @@
 ##Motivation
 This project was created to output the services of a company that offers boat rides in the João Pessoa-PB, Brazil.
 
-##Content
+## Content
 
 1.Home Page
     The idea developed on the homepage was to tell the visitor a little about the city to develop some curiosity and interest while displaying the city and output some of the most beautiful points of João Pessoa. To sell our product we have to first convince the customer to visit our city. This page contains a carousel and a mini-map embedded.
