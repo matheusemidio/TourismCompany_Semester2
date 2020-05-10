@@ -1,6 +1,6 @@
 # Project30 
 
-![Project Design](.img/design.jpeg)
+![Project Design](./img/design.jpeg)
 ## Motivation
 This project was created to output the services of a company that offers boat rides in the João Pessoa-PB, Brazil.
 
